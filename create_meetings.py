@@ -12,6 +12,7 @@ import argparse
 import MySQLdb
 import csv
 import sys
+import uuid
 
 # Global Variables
 VERBOSITY=False
@@ -20,7 +21,7 @@ RECORD_MEETING=1 # 1 for true, 0 for false
 
 # Helpers functions
 def id_generator(size=12, chars='abcdef' + string.digits):
-	return ''.join(random.choice(chars) for _ in range(size))
+	return str(uuid.uuid4())
 
 def logs(message):
         if VERBOSITY:
