@@ -2,9 +2,9 @@
 Easy script to create BigBlueButton rooms from CSV file
 
 # Prerequesites
-[python-wordpress-xmlrpc](https://python-wordpress-xmlrpc.readthedocs.io/en/latest/index.html) package:
+- [python-wordpress-xmlrpc](https://python-wordpress-xmlrpc.readthedocs.io/en/latest/index.html) package
 
-[Wordpress BigBlueButton plugin](https://github.com/albertosgz/Wordpress_BigBlueButton_plugin)
+- [Wordpress BigBlueButton plugin](https://github.com/albertosgz/Wordpress_BigBlueButton_plugin) plugin
 
 ## Example
 ```
@@ -21,6 +21,6 @@ Toronto,2222,bar!,pa,u2,recbar!
 
 Will create 2 posts for rooms Canada and Toronto, and its respectful recordings posts
 
-*** Remember to write site URL finishing in /xmlrpc.php ***
+**_Remember to write site URL finishing in /xmlrpc.php_**
 
 
