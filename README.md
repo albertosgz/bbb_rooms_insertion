@@ -6,6 +6,15 @@ Easy script to create BigBlueButton rooms from CSV file
 
 - [Wordpress BigBlueButton plugin](https://github.com/albertosgz/Wordpress_BigBlueButton_plugin) plugin
 
+- requests package
+  - `pip install requests`
+
+- MySQLdb package
+  - `sudo apt-get install python-pip python-dev libmysqlclient-dev`
+  - `pip install MySQL-python`
+  
+
+
 ## Example
 ```
 ./create_meetings.py --csv_file accounts.csv --category_name Luminosa --site_url http://foo.bar.com/xmlrpc.php --site_user admin --site_password admin --sql_host foo.bar.com --sql_user pantheon --sql_password abcd --sql_db pantheon --sql_port 18162 -v --column_rec_pw 5
@@ -23,4 +32,10 @@ Will create 2 posts for rooms Canada and Toronto, and its respectful recordings 
 
 **_Remember to write site URL finishing in /xmlrpc.php_**
 
-
+ # FAQ
+ 
+ ## I have the error IO-Error: unsupported XML-RPC protocl
+ 
+ Be dure the path to xmlrpc.php starts with http or https
+ 
+ 
